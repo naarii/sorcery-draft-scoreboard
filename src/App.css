@@ -49,3 +49,12 @@ table.score-board td, table.score-board th {
     border: 1px solid white;
     min-width: 4.75vw;
 }
+
+@media only screen and (orientation:portrait) {
+  table.score-board td, table.score-board th {
+    font-size: 2.8vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    min-width: 10vw;
+  }
+}
