@@ -1,24 +1,53 @@
 import './App.css';
-import { useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Scoreboard from './Components/Scoreboard';
-import draft2_data from './draft2_data.json';
 import ChangeLog from './Components/ChangeLog';
 import Header from './Components/Header';
 
 function App() {
-  const [draftPlayers, setDraftPlayers] = useState(draft2_data.draftPlayers);
+  const [draftPlayers, setDraftPlayers] = useState(null);
+  const [draftTitle, setDraftTitle] = useState("");
+  const [draftStartDate, setDraftStartDate] = useState("");
+
+  useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => {
+        setDraftTitle(data.draftTitle);
+        setDraftPlayers(data.draftPlayers);
+        setDraftStartDate(data.draftStartDate);
+      });
+
+  }, []);
+
+  const saveDraftPlayers = (players) => {
+    setDraftPlayers(players);
+    const requestOptions = {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({"draftTitle": draftTitle, "draftStartDate": draftStartDate, "draftPlayers": draftPlayers})
+    };
+    fetch("/api/put", requestOptions)
+        .then(response => console.log(response));
+
+  }
+
+  
 
   return (
     <BrowserRouter>
       <>
-        <Header title={draft2_data.draftTitle} players={draftPlayers} setDraftPlayers={setDraftPlayers}/>
-        <Routes>
-          <Route exact path="/sorcery-draft-scoreboard" element={<>
-            <Scoreboard players={draftPlayers} />
-          </>} />
-          <Route exact path="/sorcery-draft-scoreboard/changelog" element={<ChangeLog />} />
-        </Routes>
+        {!draftPlayers && <p>Loading...</p>}
+        {draftPlayers &&
+          <><Header title={!draftTitle ? "Loading..." : draftTitle} players={draftPlayers} setDraftPlayers={saveDraftPlayers} />
+            <Routes>
+              <Route exact path="/" element={<>
+                <Scoreboard players={draftPlayers} />
+              </>} />
+              <Route exact path="/changelog" element={<ChangeLog />} />
+            </Routes></>}
+
 
       </>
     </BrowserRouter>

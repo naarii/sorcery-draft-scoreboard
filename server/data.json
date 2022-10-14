@@ -1,0 +1,62 @@
+{
+    "draftTitle": "October MtG Draft",
+    "draftStartDate": "08-10-2022",
+    "draftPlayers": [
+        {
+            "player": {
+                "name": "Amelie",
+                "id": "Amelie1",
+                "colour": "COLOUR09"
+            }
+        },
+        {
+            "player": {
+                "name": "Anna",
+                "id": "Anna1",
+                "colour": "COLOUR05"
+            }
+        },
+        {
+            "player": {
+                "name": "Agustin",
+                "id": "Agustin1",
+                "colour": "COLOUR10"
+            }
+        },
+        {
+            "player": {
+                "name": "Ben",
+                "id": "Ben1",
+                "colour": "COLOUR04"
+            }
+        },
+        {
+            "player": {
+                "name": "Chloe",
+                "id": "Chloe1",
+                "colour": "COLOUR08"
+            }
+        },
+        {
+            "player": {
+                "name": "Katie",
+                "id": "Katie1",
+                "colour": "COLOUR03"
+            }
+        },
+        {
+            "player": {
+                "name": "Ronan",
+                "id": "Ronan1",
+                "colour": "COLOUR01"
+            }
+        },
+        {
+            "player": {
+                "name": "Zee",
+                "id": "Zee1",
+                "colour": "COLOUR02"
+            }
+        }
+    ]
+}
