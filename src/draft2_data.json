@@ -5,22 +5,22 @@
 		{"player": {
 			"name": "Amelie",
 			"id": "Amelie1",
-			"colour": "COLOUR06",
+			"colour": "COLOUR09",
 			"wins": [
 				{"player": {
 				"id": "Ronan1",
-				"score": 1
+				"score": 2
 			}}]
 		}},
 		{"player": {
 			"name": "Anna",
 			"id": "Anna1",
-			"colour": "COLOUR01"
+			"colour": "COLOUR05"
 		}},
 		{"player": {
-			"name": "Augustine",
-			"id": "Augustine1",
-			"colour": "COLOUR02"
+			"name": "Agustin",
+			"id": "Agustin1",
+			"colour": "COLOUR10"
 		}},
 		{"player": {
 			"name": "Ben",
@@ -30,7 +30,7 @@
 		{"player": {
 			"name": "Chloe",
 			"id": "Chloe1",
-			"colour": "COLOUR05",
+			"colour": "COLOUR08",
 			"wins": [
 				{"player": {
 				"id": "Zee1",
@@ -49,12 +49,12 @@
 		{"player": {
 			"name": "Ronan",
 			"id": "Ronan1",
-			"colour": "COLOUR07"
+			"colour": "COLOUR01"
 		}},
 		{"player": {
 			"name": "Zee",
 			"id": "Zee1",
-			"colour": "COLOUR08",
+			"colour": "COLOUR02",
 			"wins": [
 				{"player": {
 				"id": "Chloe1",

@@ -3,12 +3,39 @@ body {
     color: white;
   }
 
+  .top-screen {
+    min-height: 10vh;
+    display: flex;
+  }
+
+  .top-screen h1 {
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .top-screen Button {
+    margin: 10px;
+  }
+
+.add-result-modal div  {
+    background-color: #202933;
+  }
+
+  .modal-header button {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+
+  .modal-body {
+    text-align: center;
+  }
+
 .center-screen {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
+    min-height: 90vh;
   }
 table.score-board {
     display:block; 
@@ -16,7 +43,9 @@ table.score-board {
 }
 
 table.score-board td, table.score-board th {
-    font-size: 1.5vw;
-    padding: 0.5vw;
+    font-size: 1.1vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
     border: 1px solid white;
+    min-width: 4.75vw;
 }
