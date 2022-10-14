@@ -34,7 +34,7 @@ const Scoreboard = ({ players }) => {
                     const vsPlayerMatchCurrent = currentVsPlayer.player.wins?.find(x => x.player.id === currentPlayer.player.id);
                     return (
                         <td style={{
-                            background: vsPlayerMatch && vsPlayerMatchCurrent && vsPlayerMatch.player.score > vsPlayerMatchCurrent.player.score 
+                            background: vsPlayerMatch && vsPlayerMatchCurrent && vsPlayerMatch.player.score > vsPlayerMatchCurrent.player.score && vsPlayerMatch.player.score > 1
                             ? getBackgroundColor(currentPlayer.player.colour) : "transparent",
                             backgroundImage: currentPlayer.player.id === currentVsPlayer.player.id ? `url(${hatchImg})` : "none"
                         }} key={currentVsPlayer.player.id}>
