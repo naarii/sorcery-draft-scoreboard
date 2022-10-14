@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sorcery-draft-scoreboard/static/css/main.95de791d.css",
-    "main.js": "/sorcery-draft-scoreboard/static/js/main.3e5a36f2.js",
+    "main.css": "/sorcery-draft-scoreboard/static/css/main.006c737d.css",
+    "main.js": "/sorcery-draft-scoreboard/static/js/main.d18c97fc.js",
     "static/js/787.fe1aabd4.chunk.js": "/sorcery-draft-scoreboard/static/js/787.fe1aabd4.chunk.js",
     "index.html": "/sorcery-draft-scoreboard/index.html",
-    "main.95de791d.css.map": "/sorcery-draft-scoreboard/static/css/main.95de791d.css.map",
-    "main.3e5a36f2.js.map": "/sorcery-draft-scoreboard/static/js/main.3e5a36f2.js.map",
+    "main.006c737d.css.map": "/sorcery-draft-scoreboard/static/css/main.006c737d.css.map",
+    "main.d18c97fc.js.map": "/sorcery-draft-scoreboard/static/js/main.d18c97fc.js.map",
     "787.fe1aabd4.chunk.js.map": "/sorcery-draft-scoreboard/static/js/787.fe1aabd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95de791d.css",
-    "static/js/main.3e5a36f2.js"
+    "static/css/main.006c737d.css",
+    "static/js/main.d18c97fc.js"
   ]
 }
